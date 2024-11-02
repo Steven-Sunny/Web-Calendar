@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calendar-container {
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.month-year {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.navigation {
+  margin: 10px 0;
+}
+
+#calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#calendar th, #calendar td {
+  width: 14%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-align: center;
+}
+
+#calendar td.booked {
+  background-color: #ffcccb;
+  color: #000;
+}
+
+#calendar td:hover {
+  background-color: #e6f7ff;
+}
+
+.prev-next-month {
+  color: #ccc;
+}
+
+.highlighted {
+  background-color: #ffff99;
+}
