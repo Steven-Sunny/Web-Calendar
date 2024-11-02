@@ -48,6 +48,37 @@ body {
   color: #ccc;
 }
 
-.highlighted {
-  background-color: #ffff99;
+.booking-container {
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#bookingForm label {
+  text-align: left;
+}
+
+#bookingForm input, #bookingForm select, #bookingForm button {
+  padding: 8px;
+  font-size: 1em;
+}
+
+#bookingForm button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#bookingForm button:hover {
+  background-color: #45a049;
 }
