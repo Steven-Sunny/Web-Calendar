@@ -38,7 +38,7 @@ if(stored_array){
 
 //get the booked thing working(Done yay)
 //get data input (Done YAY)
-//work on repainting page
+//work on repainting page 
 function Event(date, time, task) {
     this.date = date;
     this.time = time;
@@ -103,7 +103,7 @@ function print_calendar_body() {
 
                 //console.log((previousMonthTotalDays - (firstDay - j - 1)), date.getDate(), month, new Date().getMonth(), year, new Date().getFullYear());
                 if (!isToday && (previousMonthTotalDays - (firstDay - j - 1)) === date.getDate() && month - 1  === new Date().getMonth() && year === new Date().getFullYear()) {
-                    td.setAttribute("class", "nonCurrentDays today");
+                    td.classList.add("today");
                     isToday = true;
                 }
 
@@ -126,7 +126,7 @@ function print_calendar_body() {
                 }
                 td.textContent = dayCounter;
                 if (!isToday && dayCounter === date.getDate() && month === new Date().getMonth() && year === new Date().getFullYear()) {
-                    td.setAttribute("class", "currentDays today");
+                    td.classList.add("today");
                     isToday = true;
                 }
 
@@ -157,7 +157,7 @@ function print_calendar_body() {
                 td.textContent = dayCounter - totalDays;
 
                 if (!isToday && (dayCounter - totalDays) === date.getDate() && month + 1 === new Date().getMonth() && year === new Date().getFullYear()) {
-                    td.setAttribute("class", "nonCurrentDays today");
+                    td.classList.add("today");
                     isToday = true;
                 }
 
